@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:chess_vectors_flutter/chess_vectors_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:chess/chess.dart' hide State;
+import 'package:personal_packages/icon_svg.dart';
 import 'board_arrow.dart';
 import 'chess_board_controller.dart';
 import 'constants.dart';
@@ -256,40 +257,124 @@ class BoardPiece extends StatelessWidget {
 
     switch (piece) {
       case "WP":
-        imageToDisplay = WhitePawn();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/zinvor_white.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        // WhitePawn();
         break;
       case "WR":
-        imageToDisplay = WhiteRook();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/pert_white.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        // WhiteRook();
         break;
       case "WN":
-        imageToDisplay = WhiteKnight();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/tsi_white.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        //  WhiteKnight();
         break;
       case "WB":
-        imageToDisplay = WhiteBishop();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/ishkhan_white.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        //  WhiteBishop();
         break;
       case "WQ":
-        imageToDisplay = WhiteQueen();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/takouhi_white.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        //  WhiteQueen();
         break;
       case "WK":
-        imageToDisplay = WhiteKing();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/takavor_white.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        //  WhiteKing();
         break;
       case "BP":
-        imageToDisplay = BlackPawn();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/zinvor_green.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        // BlackPawn();
         break;
       case "BR":
-        imageToDisplay = BlackRook();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/pert_green.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        // BlackRook();
         break;
       case "BN":
-        imageToDisplay = BlackKnight();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/tsi_green.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        //  BlackKnight();
         break;
       case "BB":
-        imageToDisplay = BlackBishop();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/ishkhan_green.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        // BlackBishop();
         break;
       case "BQ":
-        imageToDisplay = BlackQueen();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/takouhi_green.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        // BlackQueen();
         break;
       case "BK":
-        imageToDisplay = BlackKing();
+        imageToDisplay = Center(
+          child: BuildSvgIcon(
+            svgAssetPath: 'assets/chess_pice/takavor_green.svg',
+            width: 25,
+            height: 30,
+          ),
+        );
+        // BlackKing();
         break;
       default:
         imageToDisplay = WhitePawn();
